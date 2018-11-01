@@ -1,0 +1,9 @@
+<resources>
+    //orders successful
+    <string name="orders_success">Your quotations have been successfully received!</string>
+    <string name="buy_now">{fa-envelope} &#160; EMAIL</string>
+    <string name="cart">{md-local-grocery-store} &#160; GET QUOTATION</string>
+    <string name="addedToCart">{md-local-grocery-store} &#160; CHECKOUT</string>
+    <string name="place_order">Get Quotation</string>
+    <string name="order_from_app"><html><b>&#160; ( Quotation from Android App )</b></html></string>
+</resources>

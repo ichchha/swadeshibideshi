@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/change_pw_et_box">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_layout"
+        android:orientation="horizontal"
+        android:layout_margin="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image"
+            android:layout_width="@dimen/preview_image_width"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/product_placeholder"
+                fresco:placeholderImageScaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@id/imgProduct"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/itemName"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/order_text"
+                android:fontFamily="@font/whitney_semibold"
+                android:textSize="@dimen/orders_text" />
+
+            <LinearLayout
+                android:id="@+id/qtyLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSize"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/Size"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size_no"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone"/>
+                <View
+                    android:id="@id/verticalLine"
+                    android:layout_width="0.7dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@color/colorGrey"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtQty"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:textColor="@color/order_text"
+                    android:fontFamily="@font/whitney_semibold"/>
+
+                <TextView
+                    android:id="@+id/itemQty"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity_no"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:textColor="@color/order_text"
+                    android:fontFamily="@font/whitney_semibold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,76 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cart_background"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/whitney_light"
+        android:text="Arati Tamang"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/general_text_size" />
+
+    <TextView
+        android:id="@+id/firstLineAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/whitney_light"
+        android:text="Naxal"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/general_text_size" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/whitney_light"
+        android:text="Kathmandu"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/general_text_size" />
+
+    <TextView
+        android:id="@+id/phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/whitney_light"
+        android:text="9807678898"
+        android:textAllCaps="true"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/general_text_size" />
+
+    <TextView
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="4dp"
+        android:background="@color/horizontalLine"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/useAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/whitney_semibold"
+            android:text="Use this address"
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/general_text_size" />
+    </RelativeLayout>
+</LinearLayout>

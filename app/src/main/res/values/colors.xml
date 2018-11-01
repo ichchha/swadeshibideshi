@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryPink">#E40046</color>
+    <color name="colorPrimary1">#DB021E</color>
+    <color name="colorPrimaryDark2">#DC041C</color>
+    <color name="colorPrimaryDark">@color/colorPrimaryPink</color>
+    <color name="colorAccent">#e4d616</color>
+    <color name="colorAccent2">#1724e6</color>
+    <color name="colorGreen">#44CEA9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#424242</color>
+    <color name="colorOrange">#FB9800</color>
+    <color name="colorGreyLight">#757575</color>
+    <color name="colorWhiteSecondary">#EEEEEE</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="colorRed">#E53935</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorPink">#FF80AB</color>
+    <color name="lightRed">#FF1744</color>
+    <color name="lightPink">#F06292</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="actionbar_opacity">#0000</color>
+    <color name="light_grey">#e0e0e0</color>
+
+    //login
+    <color name="login_button_pressed">@color/colorPrimary1</color>
+    <color name="login_button_focused">@color/colorPrimary1</color>
+    <color name="login_button_default">@color/colorPrimaryPink</color>
+
+    //change password
+    <color name="change_password_btn">@color/colorAccent2</color>
+    <color name="logout_btn">@color/colorAccent</color>
+
+    //navigation drawer
+    <color name="navigationDrawer">@color/colorWhiteSecondary</color>
+    <color name="nav_header_light">#FFB74D</color>
+    <color name="nav_header_dark">#FDA726</color>
+
+    //toolbar icons color
+    <color name="toolbarIcons">@color/colorGreyLight</color>
+    <color name="toolbarTransparent">@color/black_alpha_40</color>
+
+    //layout_wishlist
+    <color name="moveToCart">@color/colorAccent</color>
+
+    //user home
+    <color name="notificationBadgeColor">@color/colorPrimaryDark</color>
+    <color name="viewAllBtnColor">@color/colorPrimaryPink</color>
+    <color name="btnCategory">@color/colorAccent</color>
+    <color name="textCategory">@color/white</color>
+    <color name="colorTransparent">#00000000</color>
+
+    //product item
+    <color name="productName">@color/primaryText</color>
+    <color name="productPrice">@color/colorPrimaryPink</color>
+    <color name="originalPrice">@color/secondaryText</color>
+    <color name="discount">@color/colorAccent2</color>
+    <color name="productCategory">@color/secondaryText</color>
+
+    //products fragment
+    <color name="btnSort">@color/colorGrey</color>
+    <color name="btnFilter">@color/colorAccent</color>
+    <color name="dividerLine">@color/secondaryText</color>
+
+    //notification fragment
+    <color name="nfTitle">@color/colorGreyLight</color>
+    <color name="nfDesc">@color/colorGreyLight</color>
+    <color name="nfTime">@color/secondaryText</color>
+    <color name="nfIcon">@color/colorGreyLight</color>
+    <color name="nfBell">@color/colorAccent</color>
+
+    //orders fragment
+    <color name="order_button">@color/horizontalLine</color>
+    <color name="order_text">@color/primaryText</color>
+    <color name="st_ordered">@color/colorGreen</color>
+    <color name="st_returned">@color/colorRed</color>
+    <color name="order_pending">@color/colorGreen</color>
+    <color name="order_processing">@color/colorAccent2</color>
+    <color name="order_completed">@color/colorRed</color>
+
+    //Fragment ProductFullDetails
+    <color name="btnSave">@color/colorGrey</color>
+    <color name="description">@color/primaryText</color>
+    <color name="ratings">@color/primaryText</color>
+    <color name="btnCart">@color/colorAccent</color>
+    <color name="btnText">@color/white</color>
+    <color name="size">@color/colorGrey</color>
+    <color name="btnShare">@color/white</color>
+    <color name="txtShare">@color/secondaryText</color>
+    <color name="border_size">@color/secondaryText</color>
+    <color name="favourite">@color/colorRed</color>
+    <color name="share">@color/colorAccent</color>
+    <color name="wishlist">@color/colorRed</color>
+    <color name="horizontalLine">@color/colorWhiteSecondary</color>
+    <color name="slider_box">@color/colorWhiteSecondary</color>
+    <color name="thumbBorder">@color/colorGreyLight</color>
+
+    //cart items
+    <color name="btnPlaceOrder">@color/colorAccent</color>
+    <color name="btnRemove">@color/secondaryText</color>
+
+    //product bottom layout
+    <color name="dividerColor">@color/light_grey</color>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/user_app_bar_main" />
+
+    <RelativeLayout
+        android:id="@+id/recyclerviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cartRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnPlaceOrder"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/activity_horizontal_margin" />
+
+        <Button
+            android:id="@+id/btnPlaceOrder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_layout_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/btnPlaceOrder"
+            android:text="@string/place_order"
+            android:textColor="@color/white"
+            android:elevation="8dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/emptyTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/empty_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:id="@+id/emtpyTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/whitney_light"
+                android:text="Empty Textview"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/progressBarLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/circular_bg"
+                android:elevation="2dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/progressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/whitney_light"
+                android:text="@string/progress_txt"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/outOfStockImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/coming_soon"
+                android:scaleType="centerInside"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

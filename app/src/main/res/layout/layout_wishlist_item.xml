@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgLayout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/wishlist_itemImg_height">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/denim_jacket"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/product_placeholder" />
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="top|right"
+                android:src="@drawable/ic_notifications_black_24dp"
+                android:scaleType="fitCenter"
+                style="@style/Widget.AppCompat.ActionButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/whitney_light"
+                android:maxLines="1"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="4dp"
+                android:text="@string/item_name"
+                android:textColor="@color/secondaryText"
+                android:textSize="@dimen/small_txt_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/rstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:text="@string/rs_txt"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:text="@string/item_price"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/horizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/topLayout"
+                android:background="@color/horizontalLine"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/move_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/move_to_cart_height"
+                android:layout_below="@id/topLayout"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="@string/move_to_cart"
+                android:textSize="@dimen/small_txt_size"
+                android:textColor="@color/moveToCart"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

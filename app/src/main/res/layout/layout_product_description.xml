@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:fontFamily="@font/whitneybook"
+                    android:text="@string/item_name"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/cart_background"
+                    android:fontFamily="@font/whitney_light"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/medium_txt_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/priceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/rstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/whitneybook"
+                        android:textColor="@color/productPrice"
+                        android:textSize="@dimen/medium_txt_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/itemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_toEndOf="@+id/rstxt"
+                        android:layout_toRightOf="@id/rstxt"
+                        android:fontFamily="@font/whitneybook"
+                        android:text="@string/item_price"
+                        android:textColor="@color/productPrice"
+                        android:textSize="@dimen/medium_txt_size"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/originalPriceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/price_left_margin"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/discount_rstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/whitneybook"
+                        android:textColor="@color/originalPrice"
+                        android:textSize="@dimen/medium_txt_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/originalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/discount_rstxt"
+                        android:fontFamily="@font/whitneybook"
+                        android:textColor="@color/originalPrice"
+                        android:textSize="@dimen/medium_txt_size"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/discountLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/price_left_margin"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/discountOffer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/whitneybook"
+                        android:textColor="@color/discount"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/off_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/discountOffer"
+                        android:fontFamily="@font/whitneybook"
+                        android:textColor="@color/discount"
+                        android:textSize="@dimen/small_txt_size"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitney_semibold"
+                android:text="@string/description"
+                android:textAllCaps="false"
+                android:textColor="@color/description"
+                android:textSize="@dimen/medium_txt_size" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:fontFamily="@font/whitney_light"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/txtDescription"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/general_text_size"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/dimensionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_padding"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:text="@string/dimensions"
+                    android:textAllCaps="false"
+                    android:textColor="@color/description"
+                    android:textSize="@dimen/medium_txt_size" />
+
+                <TextView
+                    android:id="@+id/txtDimension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/whitneybook"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="@dimen/medium_txt_size"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attributesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/attributeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitney_semibold"
+                android:text="@string/availability"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/medium_txt_size"
+                android:textStyle="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/attributeRV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/horizontalLine1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/horizontalLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/medium_padding"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/whitney_semibold"
+                android:text="@string/availability"
+                android:textColor="@color/primaryText"
+                android:textSize="@dimen/medium_txt_size"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/price_left_margin"
+                android:text="@string/txtRatings"
+                android:textColor="@color/colorAccent2"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ratings"
+                android:textColor="@color/ratings"
+                android:textSize="@dimen/original_price_text_size"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txtRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/price_left_margin"
+                android:text="@string/txtRatings"
+                android:textColor="@color/originalPrice"
+                android:textSize="@dimen/original_price_text_size"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/horizontalLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@color/horizontalLine"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_layout_height"
+            android:layout_below="@id/horizontalLine"
+            android:elevation="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:visibility="gone">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/txtShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btnShare"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/share"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/verticalLine2"
+                android:layout_width="0.7dp"
+                android:layout_height="match_parent"
+                android:background="@color/horizontalLine" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/txtWishlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/btnShare"
+                android:gravity="center"
+                android:text="@string/wishlist"
+                android:textColor="@color/wishlist" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topLayout"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@color/white"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/productSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_size"
+            android:textColor="@color/size"
+            android:textSize="@dimen/size"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productSize"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/txtSmall"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/size_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/size_small"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/txtMedium"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/size_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/size_medium"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/txtLarge"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/size_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/size_large"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/txtExtraLarge"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/size_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/size_extra_large"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/txtExtraExtraLarge"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/size_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/extra_extra_large"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

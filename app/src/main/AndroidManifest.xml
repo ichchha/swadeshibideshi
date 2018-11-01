@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.susankya.swadesibidhesi">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.susankya.swadesibidhesi.application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.SearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.ProductDetailsActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.AddToCartActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.LoginActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.OrdersActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.WishlistActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.SignUpActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.UserProfileActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.EditProfileActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.PlaceOrderActivity" />
+
+
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.CheckOutActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.PhotViewActivity" />
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.EnterEmailActivity" />
+
+        <activity android:name="com.susankya.swadesibidhesi.activities.user.ViewProfileActivity"></activity>
+
+        <meta-data
+        android:name="io.fabric.ApiKey"
+        android:value="5fea60bd45cb4f6fe48d78db081353e668f462d4"
+        />
+    </application>
+
+</manifest>

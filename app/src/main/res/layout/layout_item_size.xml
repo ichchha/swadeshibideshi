@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/sizeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding">
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/general_text_size" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/itemSizeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingBottom="@dimen/layout_padding"/>
+</LinearLayout>

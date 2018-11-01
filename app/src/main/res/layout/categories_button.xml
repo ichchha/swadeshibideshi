@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/categories_btn_height"
+        android:paddingLeft="@dimen/medium_padding"
+        android:paddingRight="@dimen/medium_padding"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="@dimen/categories_btn_right_margin"
+        android:background="@drawable/category_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/category_name"
+        android:textSize="@dimen/small_txt_size"
+        android:textAllCaps="false"
+        android:fontFamily="@font/whitney_semibold"
+        android:textColor="@color/textCategory"
+        android:elevation="2dp"
+        android:visibility="visible"/>
+</LinearLayout>

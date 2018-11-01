@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/level2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="60dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/colorGrey"
+        android:id="@+id/txt_level_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/whitney_light"
+        android:text="Categories" />
+
+    <ListView
+        android:id="@+id/product_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.1dp"
+        android:visibility="gone" />
+</LinearLayout>

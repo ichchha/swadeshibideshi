@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnSize"
+    android:paddingLeft="@dimen/medium_padding"
+    android:paddingRight="@dimen/medium_padding"
+    android:paddingTop="@dimen/layout_padding"
+    android:paddingBottom="@dimen/layout_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/size_button"
+    android:gravity="center"
+    android:text="@string/size_small"
+    android:textColor="@drawable/rbtn_textcolor_selector" />

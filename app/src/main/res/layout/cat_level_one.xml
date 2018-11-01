@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/level1_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cat_level_one_layout_height"
+    android:layout_marginLeft="@dimen/normal_padding"
+    android:layout_marginRight="@dimen/nav_item_margin"
+    android:gravity="center_vertical">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/cat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/category_icontextview"
+        android:textColor="@color/colorGrey"
+        android:visibility="gone" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/txt_level_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toRightOf="@id/cat_icon"
+        android:fontFamily="@font/whitney_light"
+        android:text="@string/nav_category_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryText"
+        android:textSize="@dimen/medium_txt_size"/>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/category_arrowicontextview"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/general_text_size" />
+
+</RelativeLayout>

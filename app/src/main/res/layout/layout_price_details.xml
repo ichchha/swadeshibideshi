@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/txtPriceDetails"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_details"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/txtPriceDetails"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/horizontalLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/total_ex_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Price excl.tax"
+            android:textSize="@dimen/cart_text_size" />
+
+        <TextView
+            android:id="@+id/price_ex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_price"
+            android:textColor="@color/originalPrice"
+            android:textSize="@dimen/original_price_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/total_ex_tax_ex_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Price excl.tax excl.discount"
+            android:textSize="@dimen/cart_text_size" />
+
+        <TextView
+            android:id="@+id/price_ex_tax_ex_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_price"
+            android:textColor="@color/originalPrice"
+            android:textSize="@dimen/original_price_text_size"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/total_inc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Price incl.tax"
+            android:textSize="@dimen/cart_text_size" />
+
+        <TextView
+            android:id="@+id/price_inc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_price"
+            android:textColor="@color/originalPrice"
+            android:textSize="@dimen/original_price_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/total_inc_tax_ex_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Price incl.tax incl.delivery"
+            android:textSize="@dimen/cart_text_size" />
+
+        <TextView
+            android:id="@+id/price_inc_tax_ex_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_price"
+            android:textColor="@color/originalPrice"
+            android:textSize="@dimen/original_price_text_size"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/txtPriceDetails"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/horizontalLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/total_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txtPayableAmount"
+            android:textStyle="bold"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/cart_text_size" />
+
+        <TextView
+            android:id="@+id/total_payable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/item_price"
+            android:textColor="@color/primaryText"
+            android:textSize="@dimen/original_price_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

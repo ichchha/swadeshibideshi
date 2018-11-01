@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.susankya.swadesibidhesi.fragments.user.ProductsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/products_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtSort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/verticalLine"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/sort"
+            android:textColor="@color/btnSort"
+            android:textSize="@dimen/sort" />
+
+        <View
+            android:id="@id/verticalLine"
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/dividerColor" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/verticalLine"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:textAllCaps="true"
+            android:textColor="@color/btnFilter"
+            android:textSize="@dimen/sort" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/emtpyTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/whitney_light"
+            android:text="Empty Textview"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/progressBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            style="?android:progressBarStyle"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/circular_bg"
+            android:elevation="2dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/progressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/whitney_light"
+            android:text="@string/progress_txt"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/outOfStockImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/coming_soon"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+</RelativeLayout>

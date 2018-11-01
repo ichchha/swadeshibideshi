@@ -1,0 +1,10 @@
+<resources>
+    //contact info
+    <string name="phone">+9779851159600</string>
+    <string name="viber">+9779851159600</string>
+    <string name="whatsApp">+9779851159600</string>
+    <string name="insta">https://www.instagram.com/mbshnepal/</string>
+    <string name="twitter">https://www.twitter.com/mbshnepal/</string>
+    <string name="messenger">mbshnepal</string>
+    <string name="facebook">https://www.facebook.com/mbshnepal/</string>
+</resources>

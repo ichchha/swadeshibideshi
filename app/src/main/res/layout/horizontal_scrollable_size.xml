@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/productSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_size"
+        android:textColor="@color/size"
+        android:textSize="@dimen/size"
+        android:textStyle="bold" />
+
+    <org.apmem.tools.layouts.FlowLayout
+        android:visibility="gone"
+        android:id="@+id/itemSizeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/layout_padding"
+        android:paddingBottom="@dimen/layout_padding"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="visible"
+        android:id="@+id/horizontal_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWhite</color>
+    <color name="colorPrimaryDark">#0071df</color>
+    <color name="colorAccent">#0071df</color>4CE241
+
+    //toolbar icons color
+    <color name="toolbarIcons">@color/colorPrimaryDark</color>
+
+    //Fragment ProductFullDetails
+    <color name="btnCart">@color/colorPrimaryDark</color>
+
+    //user home
+    <color name="notificationBadgeColor">@color/primaryText</color>
+    <color name="viewAllBtnColor">@color/colorAccent</color>
+</resources>

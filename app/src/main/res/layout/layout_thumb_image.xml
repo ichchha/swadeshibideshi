@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/thumbImg"
+        android:layout_width="@dimen/thumb_image_width"
+        android:layout_height="@dimen/thumb_image_height"
+        android:padding="1dp"
+        android:scaleType="centerInside" />
+</LinearLayout>

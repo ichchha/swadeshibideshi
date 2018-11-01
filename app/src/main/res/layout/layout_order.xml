@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/orders_textView_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/order_no"
+            android:textAllCaps="false"
+            android:textColor="@color/order_text"
+            android:textSize="@dimen/orders_text" />
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitney_light"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimaryPink"
+            android:textSize="@dimen/orders_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_layout"
+        android:layout_margin="1dp"
+        android:background="@drawable/cart_background"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itemImage"
+            android:layout_width="@dimen/orders_image_width"
+            android:layout_height="@dimen/orders_image_height"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:visibility="gone">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                fresco:actualImageResource="@drawable/denim_jacket"
+                fresco:actualImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/product_placeholder"
+                fresco:placeholderImageScaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/imgProduct"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/whitney_light"
+                android:text="Billing Address :"
+                android:textColor="@color/order_text"
+                android:textSize="@dimen/orders_text" />
+
+            <TextView
+                android:id="@+id/billingAddress"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/whitney_semibold"
+                android:text="@string/product_name"
+                android:textColor="@color/order_text"
+                android:textSize="@dimen/orders_text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSize"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/Size"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size_no"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@id/verticalLine"
+                    android:layout_width="0.7dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorGrey"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitney_light"
+                    android:text="@string/txtQty"
+                    android:textColor="@color/order_text"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/Qty"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/whitney_light"
+                    android:text="@string/quantity_no"
+                    android:textColor="@color/order_text"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shippingMethod"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/whitney_light"
+                android:gravity="center_vertical"
+                android:text="@string/category_name"
+                android:textColor="@color/colorAccent2"
+                android:textSize="@dimen/orders_text"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:text="Total : "
+                    android:textColor="@color/order_text"
+                    android:textSize="@dimen/orders_text"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/itemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rstxt"
+                    android:fontFamily="@font/whitney_semibold"
+                    android:text="@string/item_price"
+                    android:textColor="@color/order_text"
+                    android:textSize="@dimen/orders_text"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/txtOrderStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/orders_btn_height"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="@dimen/categories_btn_right_margin"
+                    android:background="@drawable/order_button"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/orders_btn_padding"
+                    android:paddingRight="@dimen/orders_btn_padding"
+                    android:textColor="@color/st_ordered"
+                    android:textSize="@dimen/orders_text" />
+
+                <TextView
+                    android:id="@+id/viewProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:layout_toRightOf="@id/txtOrderStatus"
+                    android:fontFamily="@font/whitney_light"
+                    android:gravity="bottom"
+                    android:text="@string/viewProducts"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/removeItem"
+        android:layout_alignParentRight="true"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_remove"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/topLayout"
+        android:background="@color/horizontalLine"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalLine"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/orders_bottom_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/bought_this_for"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/orders_textView_height"
+            android:gravity="center_vertical"
+            android:text="@string/bought_this_for"
+            android:textColor="@color/order_text"
+            android:textSize="@dimen/orders_text"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bought_this_for"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/orders_btn_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/categories_btn_right_margin"
+                android:background="@drawable/order_button"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/user_name"
+                android:textColor="@color/order_text"
+                android:textSize="@dimen/orders_text" />
+
+            <TextView
+                android:id="@+id/txt_others"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/orders_btn_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/categories_btn_left_margin"
+                android:layout_marginRight="@dimen/categories_btn_right_margin"
+                android:background="@drawable/order_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/orders_btn_padding"
+                android:paddingRight="@dimen/orders_btn_padding"
+                android:text="@string/others"
+                android:textColor="@color/order_text"
+                android:textSize="@dimen/orders_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

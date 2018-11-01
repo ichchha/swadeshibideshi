@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pfdRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <LinearLayout
+        android:id="@+id/emptyTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{md-search}"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/emtpyTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Empty Textview"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:progressBarStyle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/circular_bg"
+        android:elevation="2dp"
+        android:padding="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/buyNow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btnSave"
+            android:fontFamily="@font/whitney_semibold"
+            android:gravity="center"
+            android:text="@string/buy_now"
+            android:textColor="@color/btnText"
+            android:enabled="true"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/txtCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btnCart"
+            android:fontFamily="@font/whitney_semibold"
+            android:gravity="center"
+            android:text="@string/cart"
+            android:textAllCaps="true"
+            android:textColor="@color/btnText" />
+
+    </LinearLayout>
+
+    <zhan.transparent.widget.TransparentFrameLayout
+        android:id="@+id/tool_bar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+    </zhan.transparent.widget.TransparentFrameLayout>
+</RelativeLayout>

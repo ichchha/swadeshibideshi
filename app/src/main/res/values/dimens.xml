@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="layout_padding">16dp</dimen>
+    <dimen name="my_btn">30dp</dimen>
+
+
+    //toolbar
+    <dimen name="action_button_padding">8dp</dimen>
+    <dimen name="offset">100dp</dimen>
+
+    //navigation drawer
+    <dimen name="nav_drawer_width">260dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_item_margin">16dp</dimen>
+    <dimen name="nav_item_text_size">12sp</dimen>
+    <dimen name="nav_profile_txt_size">35sp</dimen>
+
+    //sign_up activity
+    <dimen name="sign_up_padding">24dp</dimen>
+    <dimen name="sign_up_margin_top">8dp</dimen>
+    <dimen name="sign_up_btn_margin_top">50dp</dimen>
+    <dimen name="radio_btn_height">40dp</dimen>
+
+    //edit profile
+    <dimen name="grid_expected_size">120dp</dimen>
+
+    //login activity
+    <dimen name="login_padding">20dp</dimen>
+    <dimen name="login_textView_height">40dp</dimen>
+    <dimen name="login_btn_height">40dp</dimen>
+    <dimen name="login_btn_width">170dp</dimen>
+    <dimen name="login_img_height">40dp</dimen>
+    <dimen name="login_editText_height">50dp</dimen>
+    <dimen name="login_tb_height">50dp</dimen>
+
+    //category slider
+    <dimen name = "category_slider_width">100dp</dimen>
+    <dimen name = "category_slider_height">100dp</dimen>
+
+    //slider item
+    <dimen name="slider_item_image_height">180dp</dimen>
+    <dimen name="slider_item_width">150dp</dimen>
+
+    //change password
+    <dimen name="enter_email_address_height">45dp</dimen>
+
+    //change password
+    <dimen name="change_pw_height">40dp</dimen>
+    <dimen name="change_pw_btn_width">180dp</dimen>
+
+    //layout dimensions
+    <dimen name="cat_level_one_layout_height">40dp</dimen>
+
+    //text size
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="medium_txt_size">16sp</dimen>
+    <dimen name="small_txt_size">12sp</dimen>
+    <dimen name="general_text_size">14sp</dimen>
+
+    //products photo view
+    <dimen name="close_icon_size">22sp</dimen>
+
+    //view height
+    <dimen name="nav_view_height">0.0001dp</dimen>
+
+    //padding
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="medium_padding">12dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+    <dimen name="extra_large_padding">32dp</dimen>
+    //margin
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="very_large_margin">35dp</dimen>
+
+    //Products Fragment
+    <dimen name="sort">15sp</dimen>
+    <dimen name="layout_height">50dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+
+    //wishlist activity
+    <dimen name="item_offset">3dp</dimen>
+    <dimen name="wishlist_itemImg_height">150dp</dimen>
+    <dimen name="move_to_cart_height">35dp</dimen>
+
+    //notifications fragment
+    <dimen name="nfBoxHeight">30dp</dimen>
+    <dimen name="nfBoxWidth">30dp</dimen>
+    <dimen name="nfBannerHeight">120dp</dimen>
+
+    //layout product item
+    <dimen name="slider_margin">12dp</dimen>
+    <dimen name="product_item_height">210dp</dimen>
+
+    //product item
+    <dimen name="product_left_margin">12dp</dimen>
+    <dimen name="product_margin_top">2dp</dimen>
+    <dimen name="product_height">130dp</dimen>
+    <dimen name="product_title_text_size">12sp</dimen>
+    <dimen name="product_price_text_size">12sp</dimen>
+    <dimen name="original_price_text_size">11sp</dimen>
+    <dimen name="offer_price_text_size">11sp</dimen>
+    <dimen name="product_category_text_size">11sp</dimen>
+    <dimen name="price_left_margin">4dp</dimen>
+
+    //user home
+    <dimen name="categories_btn_right_margin">6dp</dimen>
+    <dimen name="categories_btn_left_margin">4dp</dimen>
+    <dimen name="categories_btn_height">35dp</dimen>
+
+    //banner
+    <dimen name="banner_height">74dp</dimen>
+
+    //address
+    <dimen name="billing_address_space">4dp</dimen>
+
+    //preview items
+    <dimen name="address_space">0.5dp</dimen>
+    <dimen name="preview_image_height">100dp</dimen>
+    <dimen name="preview_image_width">80dp</dimen>
+
+    //orders fragment
+    <dimen name="orders_btn_height">20dp</dimen>
+    <dimen name="orders_textView_height">30dp</dimen>
+    <dimen name="orders_text">14sp</dimen>
+    <dimen name="orders_btn_padding">@dimen/activity_horizontal_margin</dimen>
+    <dimen name="orders_image_height">100dp</dimen>
+    <dimen name="orders_image_width">80dp</dimen>
+    <dimen name="orders_bottom_padding">12dp</dimen>
+
+    //product details layout
+    <dimen name="size">14sp</dimen>
+    <dimen name="item_price">18sp</dimen>
+    <dimen name="bottom_layout_height">50dp</dimen>
+    <dimen name="thumb_image_height">53dp</dimen>
+    <dimen name="thumb_image_width">53dp</dimen>
+    <dimen name="view_pager_height">400dp</dimen>
+
+    //cart items
+    <dimen name="cart_text_size">14sp</dimen>
+    <dimen name="cart_image_height">80dp</dimen>
+
+    //cart price details
+    <dimen name="textView_height">40dp</dimen>
+    <dimen name="text_size_small">10dp</dimen>
+
+</resources>

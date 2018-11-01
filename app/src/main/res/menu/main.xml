@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search_icon"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        android:iconTint="@color/toolbarIcons" />
+    <item
+        android:id="@+id/fav"
+        android:title="@string/favourites"
+        android:icon="@drawable/ic_menu_wishlist"
+        app:showAsAction="always"
+        android:iconTint="@color/toolbarIcons"/>
+    <item
+        android:id="@+id/cart"
+        android:title="@string/add_to_cart"
+        android:icon="@drawable/ic_menu_notifications"
+        app:showAsAction="always"
+        android:iconTint="@color/toolbarIcons"/>
+    <item
+        android:id="@+id/quotation"
+        android:title="@string/quotation"
+        android:icon="@drawable/ic_letter_q"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item
+        android:id="@+id/call"
+        android:title="@string/call_icon"
+        android:icon="@drawable/ic_local_phone_black_24dp"
+        app:showAsAction="always"
+        android:iconTint="@color/toolbarIcons"/>
+</menu>

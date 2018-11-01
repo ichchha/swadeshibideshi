@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/login_button_pressed" android:state_pressed="true" /> <!-- pressed -->
+    <shape android:shape="rectangle">
+        <corners android:radius="22dp" />
+    </shape>
+    <item android:drawable="@color/login_button_focused" android:state_focused="true" />
+    <shape android:shape="rectangle">
+        <corners android:radius="22dp" />
+    </shape><!-- focused -->
+    <item android:drawable="@color/login_button_default" />
+    <shape android:shape="rectangle">
+        <corners android:radius="22dp" />
+    </shape><!-- default -->
+
+</selector>

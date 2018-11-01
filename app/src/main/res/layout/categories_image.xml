@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/itemImage"
+        android:layout_width="@dimen/category_slider_width"
+        android:layout_height="@dimen/category_slider_height"
+        android:visibility="visible">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/category_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            fresco:placeholderImageScaleType="centerInside"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@drawable/product_placeholder"
+            fresco:actualImageResource="@drawable/denim_jacket"
+            fresco:roundedCornerRadius="4dp"
+            fresco:roundingBorderWidth="1dp"
+            fresco:roundingBorderColor="@color/horizontalLine"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

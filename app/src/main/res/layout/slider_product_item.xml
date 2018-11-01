@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/slider_item_width"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/slider_margin"
+    android:background="@drawable/change_pw_et_box"
+    android:elevation="0.2dp"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/itemImage"
+        android:layout_width="@dimen/slider_item_width"
+        android:layout_height="@dimen/slider_item_image_height"
+        android:layout_margin="1dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_image_view"
+            android:layout_width="@dimen/slider_item_width"
+            android:layout_height="@dimen/slider_item_image_height"
+            fresco:actualImageScaleType="centerInside"
+            fresco:placeholderImage="@drawable/product_placeholder"
+            fresco:placeholderImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/outOfStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Out of Stock"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/small_txt_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/whitney_light"
+            android:maxLines="1"
+            android:paddingTop="@dimen/product_margin_top"
+            android:text="@string/item_name"
+            android:textColor="@color/productName"
+            android:textSize="@dimen/general_text_size"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/priceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/productPrice"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/itemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rstxt"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/item_price"
+                    android:textColor="@color/productPrice"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/price_left_margin"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/discount_rstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/rs_txt"
+                    android:textColor="@color/originalPrice"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/originalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/discount_rstxt"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/originalPrice"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/price_left_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/discountOffer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/discount_offer"
+                    android:textColor="@color/discount"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/off_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/discountOffer"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="@string/txt_off"
+                    android:textColor="@color/discount"
+                    android:textSize="@dimen/original_price_text_size"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:minLines="1"
+            android:scrollHorizontally="true"
+            android:text="@string/item_category"
+            android:textSize="@dimen/product_category_text_size" />
+    </LinearLayout>
+</LinearLayout>

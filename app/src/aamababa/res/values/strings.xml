@@ -1,0 +1,7 @@
+<resources>
+    //orders successful
+    <string name = "machinehubEmail">info@aamababa.com</string>
+    <string name="cart">{md-local-grocery-store} &#160; ADD TO CART</string>
+    <string name="buy_now">{md-local-grocery-store} &#160; GET QUOTATION</string>
+    <string name="addedToCart">{md-local-grocery-store} &#160; ADDED TO CART</string>
+</resources>
